@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools2Do | Pakistan's Leading Online Utility & Results Portal</title>
+    <meta name="description" content="Access the latest Pakistan government schemes, BISP tracking, Petrol subsidy registration, and Matric/FSC results 2026 at Tools2Do.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0F172A;
+            --navy-light: #1E293B;
+            --gold: #B45309;
+            --gold-hover: #92400E;
+            --slate: #F8FAFC;
+            --text-gray: #64748B;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--slate);
+            color: var(--navy);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--navy);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { color: white; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+        .logo span { color: var(--gold); }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; opacity: 0.8; max-width: 700px; margin: 0 auto; }
+
+        /* Grid Section */
+        .container { max-width: 1100px; margin: -50px auto 50px; padding: 0 20px; }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-top: 4px solid transparent;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .status-badge {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+
+        .active { background: #DCFCE7; color: #166534; }
+        .pending { background: #FEF9C3; color: #854D0E; }
+
+        .tool-card h3 { margin: 0 0 10px 0; font-size: 1.3rem; color: var(--navy); }
+        .tool-card p { margin: 0; color: var(--text-gray); font-size: 0.9rem; flex-grow: 1; }
+
+        .btn-arrow {
+            margin-top: 20px;
+            color: var(--gold);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">Tools2Do<span>.com</span></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="petrol-subsidy.html">Petrol Scheme</a>
+        <a href="#results">Results</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Pakistan's Trusted Utility Portal</h1>
+    <p>Fast, verified, and easy-to-use tools for government schemes, educational results, and citizen services.</p>
+</header>
+
+<div class="container">
+    <div class="tool-grid">
+        
+        <a href="petrol-subsidy.html" class="tool-card">
+            <span class="status-badge active">Live Now</span>
+            <h3>CM Petrol Relief Scheme</h3>
+            <p>Get Rs. 100/Litre discount registration guide and eligibility check for 2026.</p>
+            <div class="btn-arrow">Access Tool →</div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <span class="status-badge active">Updated</span>
+            <h3>BISP 8171 Tracker</h3>
+            <p>Check your Benazir Income Support Program (BISP) payment status and registration online.</p>
+            <div class="btn-arrow">Check Status →</div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <span class="status-badge pending">Coming Soon</span>
+            <h3>Matric & FSC Results 2026</h3>
+            <p>Pre-register to get your BISE Abbottabad and other boards results via Roll Number.</p>
+            <div class="btn-arrow">Notify Me →</div>
+        </a>
+
+        <a href="#" class="tool-card">
+            <span class="status-badge active">Tools</span>
+            <h3>CNIC & SIM Information</h3>
+            <p>Verify how many SIMs are registered on your CNIC and find area network codes.</p>
+            <div class="btn-arrow">Open Tool →</div>
+        </a>
+
+    </div>
+</div>
+
+<footer id="about">
+    <p>&copy; 2026 Tools2Do.com | Built for the Citizens of Pakistan</p>
+    <p style="font-size: 0.8rem; opacity: 0.6;">Tools2Do is an independent informational hub. We are not a government entity.</p>
+</footer>
+
+</body>
+</html>
